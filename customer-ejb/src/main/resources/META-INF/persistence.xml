@@ -1,0 +1,17 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             version="2.1">
+
+    <persistence-unit name="customerPU" transaction-type="JTA">
+
+        <jta-data-source>java:/jdbc/CustomerDS</jta-data-source>
+
+        <class>com.demo.customer.util.model.CustomerModel</class>
+
+        <properties>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
