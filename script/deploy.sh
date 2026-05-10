@@ -66,7 +66,16 @@ if [ $? -ne 0 ]; then
 fi
 
 print_success "EAR copied successfully"
+
+# Create deploy marked
+EAR_NAME=$(basename "$EAR_FILE")
+DEPLOY_MARKER="$DEPLOYMENTS_DIR/$EAR_NAME.dodeploy"
+print_info "Creating deployment marker..."
+
+touch DEPLOY_MARKER
+
+print_success "Deployment marker created"
+
 print_info "Starting WildFly..."
 cd "$WILDFLY_HOME/bin" # $WILDFLY_HOME has set it up into your local variable env machine
-
 ./standalone.sh -c "$STANDALONE_CONFIG"

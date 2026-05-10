@@ -1,12 +1,13 @@
-<application xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="7">
+<application xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+             version="7">
 
     <module>
-        <ejb>customer-ejb.jar</ejb>
+        <ejb>com.demo-customer-ejb-1.0.0.jar</ejb>
     </module>
 
     <module>
         <web>
-            <web-uri>customer-war.war</web-uri>
+            <web-uri>com.demo-customer-war-1.0.0.war</web-uri>
             <context-root>/app</context-root>
         </web>
     </module>
