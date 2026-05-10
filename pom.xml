@@ -14,7 +14,7 @@
     <modules>
         <module>customer-util</module>
         <module>customer-ejb</module>
-        <!--- <module>customer-war</module> -->
+        <module>customer-war</module>
         <!--- <module>customer-ear</module>-->
     </modules>
 
