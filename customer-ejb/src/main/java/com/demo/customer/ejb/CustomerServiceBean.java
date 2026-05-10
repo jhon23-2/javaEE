@@ -3,7 +3,6 @@ package com.demo.customer.ejb;
 import com.demo.customer.util.dto.CustomerRequestDTO;
 import com.demo.customer.util.dto.CustomerResponseDTO;
 import com.demo.customer.util.model.CustomerModel;
-import jdk.jpackage.internal.Log;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
