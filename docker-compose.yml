@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgres:15
+    container_name: javaee_postgres_container
+    environment:
+      POSTGRES_DB: javaee_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql_volume:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgresql_volume:
