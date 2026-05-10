@@ -7,12 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="customer-war" />
-        <module name="customer-ejb" />
         <module name="customer-util" />
+        <module name="customer-ejb" />
+        <module name="customer-ear" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="customer-ear" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
