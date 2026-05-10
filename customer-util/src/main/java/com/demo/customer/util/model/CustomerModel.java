@@ -17,8 +17,7 @@ public class CustomerModel {
     public CustomerModel() {
     }
 
-    public CustomerModel(Long id, String lastName, String name) {
-        this.id = id;
+    public CustomerModel(String lastName, String name) {
         this.lastName = lastName;
         this.name = name;
     }
